@@ -4,7 +4,7 @@
 
 ### 1. Create a new <a href="https://discord.com/developers/applications">Discord Application</a> in the Discord Developer Portal
 
-- Give app a frienly name and click the **Create App** button
+- Give app a friendly name and click the **Create App** button
 - Take note of the app **CLIENT ID**, you will need it later
 - Scroll down to the **Bot** section
 - Click the **Create a Bot User** button
@@ -15,6 +15,7 @@
 - Go to **OAuth2 > URL Generator**
 - Choose Scopes: **Bot**
 - Choose the **Bot Permission** you need
+- Follow the generated link below and select the server you want to invite the bot to
 
 ### 3. Install the bot
 
