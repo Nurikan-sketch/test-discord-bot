@@ -13,13 +13,13 @@ const commands = [
 ];
 
 // noinspection JSClosureCompilerSyntax
-const rest = new REST({version: '10'}).setToken(config.token);
+const rest = new REST({version: '10'}).setToken(config.TOKEN);
 
 (async () => {
     try {
         console.log('Started refreshing application (/) commands.');
 
-        await rest.put(Routes.applicationCommands(config.client_id), {body: commands});
+        await rest.put(Routes.applicationCommands(config.CLIENT_ID), {body: commands});
 
         console.log('Successfully reloaded application (/) commands.');
     } catch (error) {
@@ -45,4 +45,4 @@ client.on('interactionCreate', async interaction => {
     }
 });
 
-client.login(config.token);
+client.login(config.TOKEN);
