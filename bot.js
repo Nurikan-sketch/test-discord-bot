@@ -10,6 +10,10 @@ const commands = [
         name: "hello",
         description: "User hello",
     },
+    {
+        name: "amogus",
+        description: "Send sus",
+    },
 ];
 
 // noinspection JSClosureCompilerSyntax
@@ -42,6 +46,9 @@ client.on('interactionCreate', async interaction => {
     }
     if (interaction.commandName === 'hello') {
         await interaction.reply('Hello!');
+    }
+    if (interaction.commandName === 'amogus') {
+        await interaction.reply('Sus!');
     }
 });
 
